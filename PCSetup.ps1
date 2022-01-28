@@ -612,7 +612,7 @@ function IntechPower {
 
 function AutomateInstall{
 $args = @("/s")
-Start-Process -Filepath "c:\PurpleJelly\PurpleJelly-DeviceSetup-master\Agent_Install.exe" -ArgumentList $args
+Start-Process -Filepath "c:\PurpleJelly\DeviceSetup-main\Agent_Install.exe" -ArgumentList $args
 }
 
 function DisableFastStartup{
@@ -627,7 +627,7 @@ w32tm /resync
 }
 
 function Bitlocker{
-Start-Process "cmd.exe" "/c C:\PurpleJelly\PurpleJelly-DeviceSetup-master\BitlokerConfigurator.bat"
+Start-Process "cmd.exe" "/c C:\PurpleJelly\DeviceSetup-main\BitlokerConfigurator.bat"
 }
 
 function Reboot{
