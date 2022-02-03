@@ -611,8 +611,7 @@ function IntechPower {
 }
 
 function AutomateInstall{
-$args = @("/s")
-Start-Process -Filepath "c:\PurpleJelly\DeviceSetup-main\Agent_Install.exe" -ArgumentList $args
+msiexec /i "c:\PurpleJelly\DeviceSetup-main\Agent_Install.msi" /quiet
 }
 
 function DisableFastStartup{
