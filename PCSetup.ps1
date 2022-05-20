@@ -23,8 +23,7 @@ function ReclaimWindows10 {
         Start-Process powershell.exe "-NoProfile -ExecutionPolicy Bypass -File `"$PSCommandPath`"" -Verb RunAs
         Exit
     }
-
-
+}
 
     ##########
     # Privacy Settings
