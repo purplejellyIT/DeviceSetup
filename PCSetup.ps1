@@ -615,7 +615,7 @@ function IntechPower {
 #Start-Process -Filepath "c:\PurpleJelly\PurpleJelly-DeviceSetup-master\Agent_Install.exe" -ArgumentList $args
 #}
 
-msiexec /i c:\PurpleJelly\PurpleJelly-DeviceSetup-master\Agent_Install.msi /qn /lv c:\PurpleJelly\agent_install_log.txt
+msiexec /i c:\PurpleJelly\PurpleJelly-DeviceSetup-main\Agent_Install.msi /qn /lv c:\PurpleJelly\agent_install_log.txt
 
 function DisableFastStartup{
 powercfg -h off
@@ -629,7 +629,7 @@ w32tm /resync
 }
 
 function Bitlocker{
-Start-Process "cmd.exe" "/c C:\PurpleJelly\PurpleJelly-DeviceSetup-master\BitlokerConfigurator.bat"
+Start-Process "cmd.exe" "/c C:\PurpleJelly\PurpleJelly-DeviceSetup-main\BitlokerConfigurator.bat"
 }
 
 function Reboot{
